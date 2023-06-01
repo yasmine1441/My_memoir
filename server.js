@@ -72,6 +72,7 @@ app.get('/courses', (req, res) => res.render('courses'));
 app.get('/assignmnt', (req, res) => res.render('assignmnt'));
 app.get('/assignjs', (req, res) => res.render('assignjs'));
 app.get('/tools', (req, res) => res.render('tools'));
+app.get('/contact', (req, res) => res.render('contact'));
 
 app.use(authRoutes);
 
