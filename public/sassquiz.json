@@ -1,0 +1,74 @@
+[
+    {
+    "title": "What is Sass?",
+    "answer_1": "A programming language",
+    "answer_2": "A markup language",
+    "answer_3": "A scripting language",
+    "answer_4": "A styling language",
+    "right_answer": "A styling language"
+    },
+    {
+    "title": "What does Sass stand for?",
+    "answer_1": "Syntactically Awesome Style Sheets",
+    "answer_2": "Stylish and Simple Styles",
+    "answer_3": "Simple and Accessible Style Sheets",
+    "answer_4": "Simplified Application Style Sheets",
+    "right_answer": "Syntactically Awesome Style Sheets"
+    },
+    {
+    "title": "Which extension is used for Sass files?",
+    "answer_1": ".css",
+    "answer_2": ".scss",
+    "answer_3": ".sass",
+    "answer_4": ".style",
+    "right_answer": ".scss"
+    },
+    {
+    "title": "What is the main advantage of using Sass?",
+    "answer_1": "Simplifies HTML structure",
+    "answer_2": "Enhances website performance",
+    "answer_3": "Enables nested selectors",
+    "answer_4": "Improves JavaScript functionality",
+    "right_answer": "Enables nested selectors"
+    },
+    {
+    "title": "How do you create a Sass variable?",
+    "answer_1": "$myVariable: value;",
+    "answer_2": "@myVariable: value;",
+    "answer_3": "#myVariable: value;",
+    "answer_4": ".myVariable { value; }",
+    "right_answer": "$myVariable: value;"
+    },
+    {
+    "title": "What does the Sass function 'darken()' do?",
+    "answer_1": "Makes a color lighter",
+    "answer_2": "Adjusts the hue of a color",
+    "answer_3": "Makes a color darker",
+    "answer_4": "Inverts the color",
+    "right_answer": "Makes a color darker"
+    },
+    {
+    "title": "How do you import a Sass partial into another Sass file?",
+    "answer_1": "@import 'partial.scss';",
+    "answer_2": "@import 'partial';",
+    "answer_3": "import 'partial.scss';",
+    "answer_4": "import 'partial';",
+    "right_answer": "@import 'partial.scss';"
+    },
+    {
+    "title": "What does the Sass mixin do?",
+    "answer_1": "Groups a set of styles together",
+    "answer_2": "Changes the element's position",
+    "answer_3": "Defines a new data type",
+    "answer_4": "Applies animations to elements",
+    "right_answer": "Groups a set of styles together"
+    },
+    {
+    "title": "Which operator is used for mathematical calculations in Sass?",
+    "answer_1": "+",
+    "answer_2": "-",
+    "answer_3": "*",
+    "answer_4": "/",
+    "right_answer": "+"
+    }
+    ]

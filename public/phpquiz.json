@@ -1,0 +1,74 @@
+[
+    {
+    "title": "What does PHP stand for?",
+    "answer_1": "Personal Home Page",
+    "answer_2": "PHP: Hypertext Preprocessor",
+    "answer_3": "Programming Hypertext Processor",
+    "answer_4": "Pretext Hyper Processor",
+    "right_answer": "PHP: Hypertext Preprocessor"
+    },
+    {
+    "title": "Which of the following is NOT a PHP data type?",
+    "answer_1": "String",
+    "answer_2": "Boolean",
+    "answer_3": "Float",
+    "answer_4": "Integer",
+    "right_answer": "Float"
+    },
+    {
+    "title": "Which symbol is used for concatenation in PHP?",
+    "answer_1": "+",
+    "answer_2": "&",
+    "answer_3": ".",
+    "answer_4": "-",
+    "right_answer": "."
+    },
+    {
+    "title": "Which function is used to output text in PHP?",
+    "answer_1": "print()",
+    "answer_2": "echo()",
+    "answer_3": "printf()",
+    "answer_4": "display()",
+    "right_answer": "echo()"
+    },
+    {
+    "title": "Which loop is used to iterate through an array in PHP?",
+    "answer_1": "for loop",
+    "answer_2": "while loop",
+    "answer_3": "do-while loop",
+    "answer_4": "foreach loop",
+    "right_answer": "foreach loop"
+    },
+    {
+    "title": "Which superglobal variable is used to retrieve information from forms in PHP?",
+    "answer_1": "$_GET",
+    "answer_2": "$_POST",
+    "answer_3": "$_REQUEST",
+    "answer_4": "$_SERVER",
+    "right_answer": "$_POST"
+    },
+    {
+    "title": "Which function is used to include a file in PHP?",
+    "answer_1": "require()",
+    "answer_2": "include()",
+    "answer_3": "import()",
+    "answer_4": "load()",
+    "right_answer": "require()"
+    },
+    {
+    "title": "Which function is used to find the length of a string in PHP?",
+    "answer_1": "length()",
+    "answer_2": "count()",
+    "answer_3": "size()",
+    "answer_4": "strlen()",
+    "right_answer": "strlen()"
+    },
+    {
+    "title": "Which function is used to redirect the user to a different URL in PHP?",
+    "answer_1": "redirect()",
+    "answer_2": "header()",
+    "answer_3": "location()",
+    "answer_4": "navigate()",
+    "right_answer": "header()"
+    }
+    ]

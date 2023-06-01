@@ -1,0 +1,202 @@
+<%- include('partials/nav.ejs'); -%>
+
+
+
+
+<!-- <section class="user-profile">
+
+    <h1 class="heading">Add notes</h1>
+   
+   <div class="quick-draft p-20 bg-white rad-10">
+   
+    <p class="mt-0 mb-20 c-grey fs-15">Write A Draft For Your Notess</p>
+    <form>
+      <input class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" type="text" placeholder="Title" />
+      <textarea class="d-block mb-20 w-full p-10 b-none bg-eee rad-6" placeholder="Your Thought"></textarea>
+      <input class="save d-block fs-14 bg-blue c-white b-none w-fit btn-shape" type="submit" value="Save" />
+    </form>
+  </div>
+  <br>
+
+
+        
+</section> -->
+
+
+<section class="user-profile">
+ <!-- <section class="form-container"> -->
+
+  <form id="myForm">
+    <input type="text" id="name" placeholder="Nom" required>
+    <input type="date" id="date" required>
+    <input type="text" id="type" placeholder="Type" required>
+    <textarea id="description" placeholder="Description" required></textarea>
+    <button type="submit">Ajouter</button>
+  </form>
+
+ 
+</section>
+
+<section class="user-profile">
+  
+  <table id="myTable">
+    <tr>
+      <th>Nom</th>
+      <th>Date</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+  </table>
+  
+</section>
+
+
+
+<section class="user-profile">
+  <h1 class="heading">Quick Notes</h1>
+  <main class="app">
+      <h1>My Notes List...</h1>
+      <div class="input-header">
+        <h1><span id="date"></span></h1>
+        <div class="to-do-input">
+          <input type="text" id="item" placeholder="Enter a task..."><button id="enter">Enter</button>
+        </div>
+      </div>
+      <div class="to-do-list"></div>
+    </main>
+</section>
+
+<section class="user-profile">
+  <h1 class="heading">Calender</h1>
+  <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Africa%2FAlgiers&src=YW15YXNtaW5lMjMyM0BnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=Y2xhc3Nyb29tMTExNzAyNTQ3NTg4NzIxNDA4NDU0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA1MTEyNjcwNTIyNTIwMjc1Njc1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA5Nzk0NTQ0NDEwOTYyNzQyMjY0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAzNDMxMzI3MDk4MjU2NjE3OTI3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE0OTc2OTkzMDM1NjAxNTA5Mzg2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA2MDk1MjQ0NTg5MDcyODYxNzk2QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEwMDU0Njg4NTkyMTc4MDEwODk1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZnIuZHoub2ZmaWNpYWwjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEzODY2OTE1MjQxMjA2NDQxNDYzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTExMTg0MzIxMjEyMjIxMTU2NDUyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA2NjI3NDY2MTE1NjQ0MDcwMjIzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA4MjYxMjc2NjQ4NzcwNDU4MDIwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE4MDk1ODY1NjkzNjI4MDIzOTk1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTAxODM2MzMzMTczMTg1OTk2MzU3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA0OTkxMzQ3ODY3Njg1OTIxNTQ5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA3OTM1MTc2MjQyODk1NDA0NTE3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTE3MjE4NDAyMDUxMDUzNzIzMTYwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTA5MjY5NDM1NjI0NTE4ODQ4OTUxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEzMDUyNTk5NTYyNzY2Njc1MjY5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Y2xhc3Nyb29tMTEyMjU0MzEwODY5NjA3Nzk3ODYxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230047a8&color=%230047a8&color=%23202124&color=%23c26401&color=%230047a8&color=%23137333&color=%23c26401&color=%230B8043&color=%230047a8&color=%23c26401&color=%23202124&color=%230047a8&color=%23202124&color=%230047a8&color=%23202124&color=%230047a8&color=%230047a8&color=%230047a8&color=%23202124&color=%23007b83" 
+style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+</section>
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/quizhtml.js"></script>
+<script src="js/CRUD.js"></script>
+<script>
+    const itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+
+document.querySelector("#enter").addEventListener("click", () => {
+  const item = document.querySelector("#item")
+  createItem(item)
+})
+
+document.querySelector("#item").addEventListener("keypress", (e) => {
+  if(e.key === "Enter"){
+    const item = document.querySelector("#item")
+    createItem(item)
+  }
+})
+
+function displayDate(){
+  let date = new Date()
+  date = date.toString().split(" ")
+  date = date[1] + " " + date[2] + " " + date[3] 
+  document.querySelector("#date").innerHTML = date 
+}
+
+function displayItems(){
+  let items = ""
+  for(let i = 0; i < itemsArray.length; i++){
+    items += `<div class="item">
+                <div class="input-controller">
+                  <textarea disabled>${itemsArray[i]}</textarea>
+                  <div class="edit-controller">
+                    <i class="fa-solid fa-check deleteBtn"></i>
+                    <i class="fa-solid fa-pen-to-square editBtn"></i>
+                  </div>
+                </div>
+                <div class="update-controller">
+                  <button class="saveBtn">Save</button>
+                  <button class="cancelBtn">Cancel</button>
+                </div>
+              </div>`
+  }
+  document.querySelector(".to-do-list").innerHTML = items
+  activateDeleteListeners()
+  activateEditListeners()
+  activateSaveListeners()
+  activateCancelListeners()
+}
+
+function activateDeleteListeners(){
+  let deleteBtn = document.querySelectorAll(".deleteBtn")
+  deleteBtn.forEach((dB, i) => {
+    dB.addEventListener("click", () => { deleteItem(i) })
+  })
+}
+
+function activateEditListeners(){
+  const editBtn = document.querySelectorAll(".editBtn")
+  const updateController = document.querySelectorAll(".update-controller")
+  const inputs = document.querySelectorAll(".input-controller textarea")
+  editBtn.forEach((eB, i) => {
+    eB.addEventListener("click", () => { 
+      updateController[i].style.display = "block"
+      inputs[i].disabled = false })
+  })
+}
+
+function activateSaveListeners(){
+  const saveBtn = document.querySelectorAll(".saveBtn")
+  const inputs = document.querySelectorAll(".input-controller textarea")
+  saveBtn.forEach((sB, i) => {
+    sB.addEventListener("click", () => {
+      updateItem(inputs[i].value, i)
+    })
+  })
+}
+
+function activateCancelListeners(){
+  const cancelBtn = document.querySelectorAll(".cancelBtn")
+  const updateController = document.querySelectorAll(".update-controller")
+  const inputs = document.querySelectorAll(".input-controller textarea")
+  cancelBtn.forEach((cB, i) => {
+    cB.addEventListener("click", () => {
+      updateController[i].style.display = "none"
+      inputs[i].disabled = true
+      inputs[i].style.border = "none"
+    })
+  })
+}
+
+function createItem(item){
+  itemsArray.push(item.value)
+  localStorage.setItem('items', JSON.stringify(itemsArray))
+  location.reload()
+}
+
+function deleteItem(i){
+  itemsArray.splice(i,1)
+  localStorage.setItem('items', JSON.stringify(itemsArray))
+  location.reload()
+}
+
+function updateItem(text, i){
+  itemsArray[i] = text
+  localStorage.setItem('items', JSON.stringify(itemsArray))
+  location.reload()
+}
+
+window.onload = function() {
+  displayDate()
+  displayItems()
+};
+</script> 
+
+
+
+
+
+
+
+
+
+</body>
+</html>

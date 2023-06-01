@@ -1,0 +1,74 @@
+[
+    {
+      "title": "What is JavaScript?",
+      "answer_1": "A markup language",
+      "answer_2": "A scripting language",
+      "answer_3": "A programming language",
+      "answer_4": "A styling language",
+      "right_answer": "A scripting language"
+    },
+    {
+      "title": "Which symbol is used for single-line comments in JavaScript?",
+      "answer_1": "//",
+      "answer_2": "/* */",
+      "answer_3": "<!-- -->",
+      "answer_4": "-->",
+      "right_answer": "//"
+    },
+    {
+      "title": "Which keyword is used to declare a variable in JavaScript?",
+      "answer_1": "let",
+      "answer_2": "var",
+      "answer_3": "const",
+      "answer_4": "int",
+      "right_answer": "var"
+    },
+    {
+      "title": "Which operator is used for strict equality comparison in JavaScript?",
+      "answer_1": "==",
+      "answer_2": "===",
+      "answer_3": "!=",
+      "answer_4": "!==",
+      "right_answer": "==="
+    },
+    {
+      "title": "Which built-in method can be used to convert a string to uppercase in JavaScript?",
+      "answer_1": "toUpperCase()",
+      "answer_2": "toUppercase()",
+      "answer_3": "toUpperCaseCase()",
+      "answer_4": "toUpperCaseString()",
+      "right_answer": "toUpperCase()"
+    },
+    {
+      "title": "Which function is used to output data to the browser console in JavaScript?",
+      "answer_1": "console.log()",
+      "answer_2": "print()",
+      "answer_3": "document.write()",
+      "answer_4": "alert()",
+      "right_answer": "console.log()"
+    },
+    {
+      "title": "Which JavaScript method is used to remove the last element from an array?",
+      "answer_1": "pop()",
+      "answer_2": "push()",
+      "answer_3": "shift()",
+      "answer_4": "unshift()",
+      "right_answer": "pop()"
+    },
+    {
+      "title": "Which loop is used to iterate over the properties of an object in JavaScript?",
+      "answer_1": "for loop",
+      "answer_2": "while loop",
+      "answer_3": "do-while loop",
+      "answer_4": "for...in loop",
+      "right_answer": "for...in loop"
+    },
+    {
+      "title": "Which function is used to parse a string and return an integer in JavaScript?",
+      "answer_1": "parseInt()",
+      "answer_2": "parseFloat()",
+      "answer_3": "String()",
+      "answer_4": "Number()",
+      "right_answer": "parseInt()"
+    }
+]

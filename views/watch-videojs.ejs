@@ -1,0 +1,196 @@
+<%- include('partials/nav.ejs'); -%>
+
+<section class="watch-video">
+
+   <div class="video-container">
+      <!-- <div class="video">
+         <video src="images/vid-1.mp4" controls poster="images/post-1-1.png" id="video"></video>
+      </div> -->
+
+      <iframe width="100%" height="450" src="https://www.youtube.com/embed/02Xs2ySaXcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <h3 class="title">complete js tutorial (part 01): introduction</h3>
+      <div class="info">
+         <p class="date"><i class="fas fa-calendar"></i><span>22-10-2022</span></p>
+      </div>
+      <div class="tutor">
+         <img src="images/pic-2.jpg" alt="">
+         <div>
+            <h3>elzero web school</h3>
+            <span>developer</span>
+         </div>
+      </div>
+      <form action="" method="post" class="flex">
+         <a href="/playlist" class="inline-btn">view playlist</a>
+
+
+      </form>
+      <p class="description">
+        Qu'est-ce que le langage JavaScript ? Comment l'utilise-t-on et pour quoi faire ?
+      </p>
+   </div>
+
+</section>
+
+<section class="comments">
+
+   <h1 class="heading"> comments</h1>
+
+   <form action="/watch-video" class="add-comment" >
+      <h3>add comments</h3>
+      <textarea name="comment_box" placeholder="enter your comment" required maxlength="1000" cols="30" rows="10"></textarea>
+      <input type="submit" value="add comment" class="inline-btn" name="add_comment">
+   </form>
+
+   <h1 class="heading">user comments</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="user">
+            <!-- <img src="images/pic-5.jpg" alt=""> -->
+            <div>
+               <h3><%= user.name %></h3>
+               <span><%= user.email %></span>
+            </div>
+         </div>
+         <div class="comment-box">this is your comment</div>
+         <form action="" class="flex-btn">
+            <input type="submit" value="edit comment" name="edit_comment" class="inline-option-btn">
+            <input type="submit" value="delete comment" name="delete_comment" class="inline-delete-btn">
+           
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <!-- <img src="images/pic-2.jpg" alt=""> -->
+            <div>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">awesome tutorial!
+            keep going!</div>
+      </div>
+
+     
+
+      <div class="box">
+         <div class="user">
+            <!-- <img src="images/pic-4.jpg" alt=""> -->
+            <div>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">loved it, thanks for the tutorial!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <!-- <img src="images/pic-1.jpg" alt=""> -->
+            <div>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">this is what I have been looking for! thank you so much!</div>
+      </div>
+
+      <div class="box">
+         <div class="user">
+            <!-- <img src="images/pic-2.jpg" alt=""> -->
+            <div>
+               <h3>john deo</h3>
+               <span>22-10-2022</span>
+            </div>
+         </div>
+         <div class="comment-box">thanks for the tutorial!
+
+            how to download source code file?
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script>
+// Retrieve comments from localStorage or set to an empty array
+let comments = JSON.parse(localStorage.getItem('comments')) || [];
+
+// Function to render the comments
+function renderComments() {
+  const commentsContainer = document.querySelector('.box-container');
+  commentsContainer.innerHTML = '';
+
+  // Loop through the comments and create HTML elements for each one
+  comments.forEach((comment, index) => {
+    const commentBox = `
+      <div class="box">
+        <div class="user">
+          
+          <div>
+            
+            <h3><%= user.name %></h3>
+            <span>${comment.date}</span>
+          </div>
+        </div>
+        <div class="comment-box">${comment.comment}</div>
+        <form class="flex-btn">
+          <button class="inline-option-btn edit-comment" data-index="${index}">edit comment</button>
+          <button class="inline-delete-btn delete-comment" data-index="${index}">delete comment</button>
+        </form>
+      </div>
+    `;
+    commentsContainer.insertAdjacentHTML('beforeend', commentBox);
+  });
+
+  // Add event listeners for the edit and delete buttons
+  const deleteButtons = document.querySelectorAll('.delete-comment');
+  deleteButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const index = event.target.dataset.index;
+      comments.splice(index, 1);
+      localStorage.setItem('comments', JSON.stringify(comments));
+      renderComments();
+    });
+  });
+
+  const editButtons = document.querySelectorAll('.edit-comment');
+  editButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const index = event.target.dataset.index;
+      const comment = comments[index].comment;
+      const newComment = prompt('Edit your comment:', comment);
+      if (newComment !== null) {
+        comments[index].comment = newComment;
+        localStorage.setItem('comments', JSON.stringify(comments));
+        renderComments();
+      }
+    });
+  });
+}
+
+// Call the renderComments function to display the comments
+renderComments();
+
+// Add event listener for the form that adds a new comment
+const addCommentForm = document.querySelector('.add-comment');
+addCommentForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const name = 'Your Name'; // Replace with the actual user's name
+  const comment = event.target.comment_box.value;
+  const date = new Date().toLocaleDateString(); // Get the current date
+  comments.push({ name, comment, date });
+  localStorage.setItem('comments', JSON.stringify(comments));
+  renderComments();
+  event.target.reset();
+});
+
+</script>
+</body>
+</html>

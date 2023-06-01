@@ -1,0 +1,74 @@
+[
+    {
+    "title": "What is React?",
+    "answer_1": "A JavaScript framework",
+    "answer_2": "A CSS library",
+    "answer_3": "A server-side language",
+    "answer_4": "A database management system",
+    "right_answer": "A JavaScript framework"
+    },
+    {
+    "title": "What does JSX stand for in React?",
+    "answer_1": "JavaScript XML",
+    "answer_2": "JavaScript Syntax Extension",
+    "answer_3": "Java Syntax XML",
+    "answer_4": "Java XML Schema",
+    "right_answer": "JavaScript XML"
+    },
+    {
+    "title": "Which command is used to create a new React project using Create React App?",
+    "answer_1": "create-react-app",
+    "answer_2": "new-react-app",
+    "answer_3": "react-create-app",
+    "answer_4": "start-react-app",
+    "right_answer": "create-react-app"
+    },
+    {
+    "title": "In React, what is the main function responsible for rendering components?",
+    "answer_1": "renderComponent()",
+    "answer_2": "mountComponent()",
+    "answer_3": "createComponent()",
+    "answer_4": "ReactDOM.render()",
+    "right_answer": "ReactDOM.render()"
+    },
+    {
+    "title": "What is the purpose of state in React?",
+    "answer_1": "To store and manage component data",
+    "answer_2": "To handle CSS styles",
+    "answer_3": "To define component properties",
+    "answer_4": "To handle component events",
+    "right_answer": "To store and manage component data"
+    },
+    {
+    "title": "What is a React component?",
+    "answer_1": "A function that returns JSX",
+    "answer_2": "A class that extends React.Component",
+    "answer_3": "A JavaScript object",
+    "answer_4": "A CSS selector",
+    "right_answer": "A class that extends React.Component"
+    },
+    {
+    "title": "Which lifecycle method is called when a component is inserted into the DOM?",
+    "answer_1": "componentDidMount()",
+    "answer_2": "componentWillMount()",
+    "answer_3": "componentDidUpdate()",
+    "answer_4": "componentWillUnmount()",
+    "right_answer": "componentDidMount()"
+    },
+    {
+    "title": "What is React Router used for?",
+    "answer_1": "State management",
+    "answer_2": "Server-side rendering",
+    "answer_3": "Routing in a React application",
+    "answer_4": "Form validation",
+    "right_answer": "Routing in a React application"
+    },
+    {
+    "title": "Which command is used to install React Router?",
+    "answer_1": "npm install react-router",
+    "answer_2": "npm install react-router-dom",
+    "answer_3": "npm install react-router-native",
+    "answer_4": "npm install react-router-server",
+    "right_answer": "npm install react-router-dom"
+    }
+    ]

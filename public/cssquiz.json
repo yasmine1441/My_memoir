@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Qu'est-ce que CSS signifie ?",
+        "answer_1": "Cascading Style Sheets",
+        "answer_2": "Creative Style Sheets",
+        "answer_3": "Computer Style Sheets",
+        "answer_4": "Colorful Style Sheets",
+        "right_answer": "Cascading Style Sheets"
+    },
+    {
+        "title": "Quelle balise HTML est utilisée pour lier un fichier CSS externe ?",
+        "answer_1": "&lt;link&gt;",
+        "answer_2": "&lt;style&gt;",
+        "answer_3": "&lt;css&gt;",
+        "answer_4": "&lt;script&gt;",
+        "right_answer": "&lt;link&gt;"
+    },
+    {
+        "title": "Quelle propriété CSS est utilisée pour définir la couleur du texte ?",
+        "answer_1": "background-color",
+        "answer_2": "color",
+        "answer_3": "font-size",
+        "answer_4": "text-color",
+        "right_answer": "color"
+    },
+    {
+        "title": "Quelle propriété CSS est utilisée pour définir la taille de la police ?",
+        "answer_1": "font-style",
+        "answer_2": "font-weight",
+        "answer_3": "font-size",
+        "answer_4": "text-size",
+        "right_answer": "font-size"
+    },
+    {
+        "title": "Quelle propriété CSS est utilisée pour ajouter de l'espace entre les éléments ?",
+        "answer_1": "margin",
+        "answer_2": "padding",
+        "answer_3": "border",
+        "answer_4": "space",
+        "right_answer": "margin"
+    },
+    {
+        "title": "Quelle propriété CSS est utilisée pour arrondir les bords d'un élément ?",
+        "answer_1": "border-radius",
+        "answer_2": "border-style",
+        "answer_3": "border-color",
+        "answer_4": "border-width",
+        "right_answer": "border-radius"
+    },
+    {
+        "title": "Quelle valeur de propriété CSS est utilisée pour afficher un élément en tant que grille ?",
+        "answer_1": "block",
+        "answer_2": "grid",
+        "answer_3": "flex",
+        "answer_4": "inline",
+        "right_answer": "grid"
+    },
+    {
+        "title": "Quelle propriété CSS est utilisée pour centrer horizontalement un élément ?",
+        "answer_1": "text-align",
+        "answer_2": "float",
+        "answer_3": "margin",
+        "answer_4": "align",
+        "right_answer": "text-align"
+    },
+    {
+        "title": "Quelle propriété CSS est utilisée pour masquer un élément ?",
+        "answer_1": "display",
+        "answer_2": "visibility",
+        "answer_3": "opacity",
+        "answer_4": "hidden",
+        "right_answer": "display"
+    }
+]

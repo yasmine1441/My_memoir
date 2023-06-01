@@ -1,0 +1,83 @@
+<%- include('partials/nav.ejs'); -%>
+
+<section class="contact">
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+        <!-- <form  onsubmit="sendEmail(); reset(); return false;">
+            <h3>get in touch</h3>
+            <input type="text" placeholder="enter your name" id="name" required maxlength="50" class="box">
+            <input type="email" placeholder="enter your email" id="email" required maxlength="50" class="box">
+            <input type="number" placeholder="enter your number" id="number" required maxlength="50" class="box">
+            <textarea id="msg" class="box" placeholder="enter your message" required maxlength="1000" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="inline-btn" name="submit">
+            <button type="submit"  class="inline-btn">send message</button>
+        </form> -->
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+         <h3>get in touch</h3>
+         <input type="text" placeholder="enter your name" id="name" required  class="box">
+         <input type="email" placeholder="enter your email" id="email" required  class="box">
+         <input type="number" placeholder="enter your number" id="number" required  class="box">
+         <textarea id="message" placeholder="enter your message" required class="box" ></textarea>
+         <input type="submit" value="send message" class="inline-btn" name="submit">
+      </form>
+
+    </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <a href="tel:1234567890">0557175998</a>
+         <a href="tel:1112223333">0775510140</a>
+      </div>
+      
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <a href="mailto:eLEARNING@gmail.com">eLEARNING@gmail.com</a>
+         <a href="mailto:amyasmine@gmail.com">amyasmine2323@gmail.com</a>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>office address</h3>
+         <a href="#">University Badji Mokhtar
+            Sidi Amar , Annaba , Algeria</a>
+            <!-- <a href="#">قاع الهامور<br><br></a> -->
+      </div>
+
+   </div>
+
+</section>
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+      function sendEmail(){
+         Email.send({
+      SecureToken : "28bc691f-3756-458e-b3bd-8bf5f1999a74",
+      To : 'amyasmine2323@gmail.com',
+      From : "amyasmine2323@gmail.com",
+      Subject : "Test",
+      Body : "name: "+ document.getElementById("name").value
+      
+      + "<br> Email: "+ document.getElementById("email").value
+      + "<br> phone: "+ document.getElementById("number").value
+      + "<br> message: "+ document.getElementById("message").value
+   }).then(
+   message => alert("message send succesfully")
+   );}
+</script>
+
+
+</body>
+</html>

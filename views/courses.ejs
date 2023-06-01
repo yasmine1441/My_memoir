@@ -1,0 +1,171 @@
+<%- include('partials/nav.ejs'); -%>
+
+<section class="courses">
+
+   <h1 class="heading">our courses</h1>
+
+   <div class="box-container" id="coursebox">
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-2.jpg" alt="">
+            <div class="info">
+               <h3>elzero web school</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-1.png" alt="">
+            <span>10 videos</span>
+         </div>
+         <h3 class="title">complete HTML tutorial</h3>
+         <a href="/playlist" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-3.jpg" alt="">
+            <div class="info">
+               <h3>elzero web school</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-2.png" alt="">
+            <span>10 videos</span>
+         </div>
+         <h3 class="title">complete CSS tutorial</h3>
+         <a href="/playlistcss" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-4.jpg" alt="">
+            <div class="info">
+               <h3>elzero web school</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-3.png" alt="">
+            <span>10 videos</span>
+         </div>
+         <h3 class="title">complete JS tutorial</h3>
+         <a href="/playlistjs" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-1.jpg" alt="">
+            <div class="info">
+               <h3>john deo</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-4.png" alt="">
+            <span>10 videos</span>
+         </div>
+         <h3 class="title">complete Boostrap tutorial</h3>
+         <a href="/watch-videob" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-6.jpg" alt="">
+            <div class="info">
+               <h3>john deo</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-5.png" alt="">
+            <span>10 videos</span>
+         </div>
+         <h3 class="title">complete JQuery tutorial</h3>
+         <a href="/watch-videojq" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-7.jpg" alt="">
+            <div class="info">
+               <h3>john deo</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-6.png" alt="">
+            <span>10 videos</span>
+         </div>
+         <h3 class="title">complete SASS tutorial</h3>
+         <a href="/watch-videos" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-8.jpg" alt="">
+            <div class="info">
+               <h3>john deo</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-7.png" alt="">
+            <span>10 videos</span>
+         </div>
+         <h3 class="title">complete PHP tutorial</h3>
+         <a href="/watch-videop" class="inline-btn">view playlist</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-1.jpg" alt="">
+            <div class="info">
+               <h3>john deo</h3>
+               <span>21-10-2022</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-9.png" alt="">
+            <span>10 videos</span>
+         </div>
+         <h3 class="title">complete react tutorial</h3>
+         <a href="/watch-videor" class="inline-btn">view playlist</a>
+      </div>
+
+   </div>
+
+</section>
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script>
+  // Select the search bar element and add an event listener
+const searchBar = document.querySelector('.search-form input');
+searchBar.addEventListener('keyup', (e) => {
+  // Get the search term from the input value and convert to lowercase
+  const term = e.target.value.toLowerCase();
+  // Select all the course boxes
+  const courses = document.querySelectorAll('.box');
+  // Loop over each course box
+  courses.forEach((course) => {
+    // Get the course title text content and convert to lowercase
+    const title = course.querySelector('.title').textContent.toLowerCase();
+    // If the search term is found in the title, display the course box
+    if(title.includes(term)) {
+      course.style.display = 'block';
+    } else {
+      // Otherwise, hide the course box
+      course.style.display = 'none';
+    }
+  });
+});
+
+
+</script>
+
+   
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+    {
+    "title": "What is jQuery?",
+    "answer_1": "A programming language",
+    "answer_2": "A markup language",
+    "answer_3": "A scripting language",
+    "answer_4": "A JavaScript library",
+    "right_answer": "A JavaScript library"
+    },
+    {
+    "title": "Which symbol is used as a shortcut for jQuery?",
+    "answer_1": "$",
+    "answer_2": "&",
+    "answer_3": "@",
+    "answer_4": "#",
+    "right_answer": "$"
+    },
+    {
+    "title": "Which sign is used to select elements by their class in jQuery?",
+    "answer_1": "#",
+    "answer_2": "*",
+    "answer_3": ".",
+    "answer_4": "$",
+    "right_answer": "."
+    },
+    {
+    "title": "Which jQuery method is used to hide an element?",
+    "answer_1": "hide()",
+    "answer_2": "remove()",
+    "answer_3": "detach()",
+    "answer_4": "fade()",
+    "right_answer": "hide()"
+    },
+    {
+    "title": "Which jQuery method is used to insert content into an element?",
+    "answer_1": "append()",
+    "answer_2": "insert()",
+    "answer_3": "attach()",
+    "answer_4": "add()",
+    "right_answer": "append()"
+    },
+    {
+    "title": "Which jQuery method is used to add a CSS class to an element?",
+    "answer_1": "addClass()",
+    "answer_2": "toggleClass()",
+    "answer_3": "removeClass()",
+    "answer_4": "hasClass()",
+    "right_answer": "addClass()"
+    },
+    {
+    "title": "Which jQuery method is used to fade in an element?",
+    "answer_1": "fadeIn()",
+    "answer_2": "show()",
+    "answer_3": "slideDown()",
+    "answer_4": "toggle()",
+    "right_answer": "fadeIn()"
+    },
+    {
+    "title": "Which jQuery method is used to make an AJAX request?",
+    "answer_1": "ajax()",
+    "answer_2": "get()",
+    "answer_3": "post()",
+    "answer_4": "fetch()",
+    "right_answer": "ajax()"
+    },
+    {
+    "title": "Which jQuery method is used to animate elements?",
+    "answer_1": "animate()",
+    "answer_2": "move()",
+    "answer_3": "shift()",
+    "answer_4": "transition()",
+    "right_answer": "animate()"
+    }
+    ]

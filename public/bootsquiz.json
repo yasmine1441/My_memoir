@@ -1,0 +1,74 @@
+[
+    {
+      "title": "What is Bootstrap?",
+      "answer_1": "A programming language",
+      "answer_2": "A markup language",
+      "answer_3": "A styling framework",
+      "answer_4": "A JavaScript library",
+      "right_answer": "A styling framework"
+    },
+    {
+      "title": "Which CSS preprocessor does Bootstrap use?",
+      "answer_1": "Sass",
+      "answer_2": "Less",
+      "answer_3": "Stylus",
+      "answer_4": "PostCSS",
+      "right_answer": "Sass"
+    },
+    {
+      "title": "Which class is used to create a responsive navigation bar in Bootstrap?",
+      "answer_1": ".navbar",
+      "answer_2": ".nav",
+      "answer_3": ".navigation",
+      "answer_4": ".navbar-collapse",
+      "right_answer": ".navbar"
+    },
+    {
+      "title": "Which class is used to create a responsive grid system in Bootstrap?",
+      "answer_1": ".container",
+      "answer_2": ".row",
+      "answer_3": ".col",
+      "answer_4": ".grid",
+      "right_answer": ".row"
+    },
+    {
+      "title": "Which class is used to create a responsive card component in Bootstrap?",
+      "answer_1": ".panel",
+      "answer_2": ".card",
+      "answer_3": ".box",
+      "answer_4": ".container",
+      "right_answer": ".card"
+    },
+    {
+      "title": "Which class is used to create a responsive modal dialog in Bootstrap?",
+      "answer_1": ".popup",
+      "answer_2": ".modal-dialog",
+      "answer_3": ".dialog-box",
+      "answer_4": ".modal",
+      "right_answer": ".modal-dialog"
+    },
+    {
+      "title": "Which class is used to create a responsive carousel component in Bootstrap?",
+      "answer_1": ".carousel",
+      "answer_2": ".slider",
+      "answer_3": ".slides",
+      "answer_4": ".carousel-item",
+      "right_answer": ".carousel"
+    },
+    {
+      "title": "Which class is used to create a responsive button in Bootstrap?",
+      "answer_1": ".btn",
+      "answer_2": ".button",
+      "answer_3": ".btn-primary",
+      "answer_4": ".button-primary",
+      "right_answer": ".btn"
+    },
+    {
+      "title": "Which class is used to create a responsive form input in Bootstrap?",
+      "answer_1": ".form",
+      "answer_2": ".input",
+      "answer_3": ".form-control",
+      "answer_4": ".input-control",
+      "right_answer": ".form-control"
+    }
+]
